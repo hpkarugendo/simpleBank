@@ -104,6 +104,9 @@ public class Main {
 			break;
 		case "6":
 			db.save(customers);
+			out.println("\n/////////////////////////////////////");
+			out.println("!!! THANK YOU AND GOODBYE !!!");
+			out.println("/////////////////////////////////////\n");
 			System.exit(0);
 			break;
 		}
@@ -628,7 +631,7 @@ public class Main {
 		Main m = new Main();
 		// m.listAll();
 		// m.cleanUp();
-		m.listAll();
+		//m.listAll();
 		m.run();
 	}
 

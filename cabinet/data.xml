@@ -17,10 +17,10 @@
      </object>
     </void>
     <void property="email">
-     <string>mary.sue@noob.net</string>
+     <string>m.j.watson@marvel.un</string>
     </void>
     <void property="name">
-     <string>Mary Sue</string>
+     <string>Mary Jane Watson</string>
     </void>
     <void property="phone">
      <string>001545643344</string>
@@ -82,6 +82,29 @@
     </void>
     <void property="pin">
      <string>6563</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="simpleBank.entities.Customer">
+    <void property="account">
+     <object class="simpleBank.entities.Account">
+      <void property="accountNo">
+       <int>367826</int>
+      </void>
+     </object>
+    </void>
+    <void property="email">
+     <string>t.burton@hollywood.dir</string>
+    </void>
+    <void property="name">
+     <string>Tim Burton</string>
+    </void>
+    <void property="phone">
+     <string>+5352345568745</string>
+    </void>
+    <void property="pin">
+     <string>5463</string>
     </void>
    </object>
   </void>
