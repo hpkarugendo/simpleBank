@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="11.0.1" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="simpleBank.entities.Customer">
+    <void property="account">
+     <object class="simpleBank.entities.Account">
+      <void property="accountNo">
+       <int>887680</int>
+      </void>
+      <void property="balance">
+       <double>43843.0</double>
+      </void>
+      <void property="t">
+       <int>2</int>
+      </void>
+     </object>
+    </void>
+    <void property="email">
+     <string>mary.sue@noob.net</string>
+    </void>
+    <void property="name">
+     <string>Mary Sue</string>
+    </void>
+    <void property="phone">
+     <string>001545643344</string>
+    </void>
+    <void property="pin">
+     <string>1000</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="simpleBank.entities.Customer">
+    <void property="account">
+     <object class="simpleBank.entities.Account">
+      <void property="accountNo">
+       <int>411126</int>
+      </void>
+      <void property="balance">
+       <double>2.3455667954E10</double>
+      </void>
+     </object>
+    </void>
+    <void property="email">
+     <string>ben.affleck@gotham.dc</string>
+    </void>
+    <void property="name">
+     <string>Ben Affleck</string>
+    </void>
+    <void property="phone">
+     <string>002564434345653</string>
+    </void>
+    <void property="pin">
+     <string>2222</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="simpleBank.entities.Customer">
+    <void property="account">
+     <object class="simpleBank.entities.Account">
+      <void property="accountNo">
+       <int>1029400</int>
+      </void>
+      <void property="balance">
+       <double>-99.0</double>
+      </void>
+      <void property="t">
+       <int>2</int>
+      </void>
+     </object>
+    </void>
+    <void property="email">
+     <string>p.parker@marvel.com</string>
+    </void>
+    <void property="name">
+     <string>Peter Parker</string>
+    </void>
+    <void property="phone">
+     <string>+3534345675</string>
+    </void>
+    <void property="pin">
+     <string>6563</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
