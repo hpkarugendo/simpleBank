@@ -4,6 +4,15 @@ import java.text.NumberFormat;
 
 import simpleBank.enums.AccountType;
 
+/*
+ * The Account Class
+ * By Henry Patrick Karugendo
+ * Created 30th Nov 2018
+ * Updated 5th Dec 2018
+ * This Class creates a bank Account for Customers
+ * Has a special method to set the Account Type as Enums are not saved
+ * And also displays the Account Details
+ */
 public class Account {
 	private int accountNo;
 	private double balance;

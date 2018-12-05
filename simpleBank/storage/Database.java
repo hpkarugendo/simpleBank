@@ -13,6 +13,14 @@ import java.util.List;
 import simpleBank.entities.Account;
 import simpleBank.entities.Customer;
 
+/*
+ * The Database Class
+ * By Henry Patrick Karugendo
+ * Created 2nd Nov 2018
+ * Updated 5th Dec 2018
+ * This Class saves our data to XML and reads the data from XML
+ * Chose to use XML Coder method because there were problems using the Object Stream
+ */
 public class Database {
 	private final File db = new File("cabinet/data.xml");
 
@@ -56,6 +64,11 @@ public class Database {
 			}
 		}
 		
+		/*
+		 * This is a necessary step to set the enum AccountType
+		 * As for some reason the Enums are not saved to file and 
+		 * Errors occur when loading the data without this variable being set correctly
+		 */
 		for(Customer c: css) {
 			Account na = new Account(c.getAccount().getAccountNo(), c.getAccount().getT());
 			na.setAccountType();

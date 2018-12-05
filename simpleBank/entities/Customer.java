@@ -2,6 +2,14 @@ package simpleBank.entities;
 
 import java.io.Serializable;
 
+/*
+ * The Customer Class
+ * By Henry Patrick Karugendo
+ * Created 30th Nov 2018
+ * Updated 5th Dec 2018
+ * This Class is used to create new Bank Customers 
+ * And to display their information including their Account Details
+ */
 public class Customer implements Serializable {
 	private String pin, name, email, phone;
 	private Account account;

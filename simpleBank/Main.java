@@ -18,6 +18,15 @@ import static java.lang.System.out;
 
 import java.text.NumberFormat;
 
+/*
+ * The Main Class
+ * By Henry Patrick Karugendo
+ * Created 30th Nov 2018
+ * Updated 5th Dec 2018
+ * This Class is the Logic Class and the most important Class also the most complex
+ * It is the Main Class that runs the program
+ * Run from this Class!
+ */
 public class Main {
 	private Menu m;
 	private Database db;
@@ -39,22 +48,12 @@ public class Main {
 		this.currentAccIndex = -1;
 	}
 
-	private void createAuser() {
-		Customer cu = new Customer("1111", "John Doe", "jdoe@hpk.ie", "0873340530", new Account());
-		boolean exists = false;
-
-		for (Customer c : customers) {
-			if (c.getPin().equalsIgnoreCase(cu.getPin())) {
-				exists = true;
-			}
-		}
-
-		if (!exists) {
-			customers.add(cu);
-			db.save(customers);
-		}
-	}
-
+	/*
+	 * This is the most important method after the main method
+	 * It runs the main program and keeps it running until a Customer chooses to quit
+	 * If the Customer enters an invalid input, the program continues on until the right input is entered
+	 * When the right option is selected, the mainLogic() method is called
+	 */
 	public void run() {
 		while (!op.equals("6")) {
 			m.mainMenu();
@@ -73,6 +72,7 @@ public class Main {
 		}
 	}
 
+	//This method checks validity of inputs for the run() method
 	private boolean validMain() {
 		if (op.equals("1") || op.equals("2") || op.equals("3") || op.equals("4") || op.equals("5") || op.equals("6")) {
 			return true;
@@ -81,6 +81,10 @@ public class Main {
 		return false;
 	}
 
+	/*
+	 * This method allocated the chosen option to its handler method
+	 * If the option was to quit, then the method ends the program
+	 */
 	private void mainLogic() {
 		switch (op) {
 		case "1":
@@ -105,6 +109,12 @@ public class Main {
 		}
 	}
 
+	/*
+	 * This method displays the Customer information
+	 * Their Profile and their Account Details
+	 * It required the Customer to be logged in so it calls
+	 * The reset() method to clear system and the login() method to login users
+	 */
 	private void accInfo() {
 		reset();
 		login();
@@ -116,6 +126,7 @@ public class Main {
 		}
 	}
 
+	
 	private void manage() {
 		reset();
 

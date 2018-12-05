@@ -1,7 +1,13 @@
 package simpleBank.menus;
 
 import static java.lang.System.out;
-
+/*
+ * The Menu Class
+ * By Henry Patrick Karugendo
+ * Created 30th Nov 2018
+ * Updated 5th Dec 2018
+ * This Class is simply used to display the Menus
+ */
 public class Menu {
 
 	public Menu() {
